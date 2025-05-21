@@ -1,0 +1,10 @@
+D:\PhoneBook\DataLayer\bin\Debug\DataLayer.dll.config
+D:\PhoneBook\DataLayer\bin\Debug\DataLayer.dll
+D:\PhoneBook\DataLayer\bin\Debug\DataLayer.pdb
+D:\PhoneBook\DataLayer\bin\Debug\EntityFramework.dll
+D:\PhoneBook\DataLayer\bin\Debug\EntityFramework.xml
+D:\PhoneBook\DataLayer\obj\Debug\DataLayer.csproj.AssemblyReference.cache
+D:\PhoneBook\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
+D:\PhoneBook\DataLayer\obj\Debug\DataLayer.csproj.Up2Date
+D:\PhoneBook\DataLayer\obj\Debug\DataLayer.dll
+D:\PhoneBook\DataLayer\obj\Debug\DataLayer.pdb
