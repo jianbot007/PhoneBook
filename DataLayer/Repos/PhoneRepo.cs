@@ -9,19 +9,22 @@ namespace DataLayer.Repos
 {
     public class PhoneRepo : Repo
     {
-        public void Create(phoneTable obj)
+        public bool Create(phoneTable obj)
         {
-            var phones = db.phoneTables.ToList();
-            var phone = (from p in phones where obj.Number == p.Number select p).FirstOrDefault();
-            if (obj != null && phone == null)
+            if (obj != null)
             {
                 db.phoneTables.Add(obj);
                 db.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
-        public void Update(phoneTable obj)
+        public bool Update(phoneTable obj)
         {
-            if(obj != null)
+            if (obj != null)
             {
                 var phones = db.phoneTables.ToList();
                 var phone = (from p in phones where obj.id == p.id select p).FirstOrDefault();
@@ -31,15 +34,26 @@ namespace DataLayer.Repos
                 phone.Number = obj.Number;
 
                 db.SaveChanges();
-
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
-        public void Delete(int id)
+        public bool Delete(int id)
         {
             var phones = db.phoneTables.ToList();
             var phone = (from p in phones where id == p.id select p).FirstOrDefault();
-
+            if(phone != null) { 
             db.phoneTables.Remove(phone);
+            db.SaveChanges();
+            return true;
+        }
+            else
+            {
+             return false;
+            }
         }
         public List<phoneTable> Get()
         {

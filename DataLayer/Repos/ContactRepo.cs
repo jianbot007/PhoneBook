@@ -10,16 +10,21 @@ namespace DataLayer.Repos
     public class ContactRepo : Repo
     {  
        
-        public void Create(Contact obj)
+        public bool Create(Contact obj)
         {
             if (obj != null)
             {
                 db.Contacts.Add(obj);
                 db.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
             }
  
         }
-        public void Update(Contact obj)
+        public bool Update(Contact obj)
         {
 
             if (obj != null)
@@ -35,15 +40,27 @@ namespace DataLayer.Repos
                 contact.user_id = obj.user_id;
 
                 db.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
-        public void Delete(int id)
-        {
+        public bool Delete(int id)
+        { 
             var contacts = db.Contacts.ToList();
             var contact = (from c in contacts where id == c.id select c).FirstOrDefault();
-
-            db.Contacts.Remove(contact);
-            db.SaveChanges();
+            if (contact != null)
+            {
+                db.Contacts.Remove(contact);
+                db.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         public List<Contact> Get()
         {

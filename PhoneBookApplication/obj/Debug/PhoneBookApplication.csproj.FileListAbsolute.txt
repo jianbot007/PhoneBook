@@ -79,3 +79,8 @@ D:\PhoneBook\PhoneBookApplication\obj\Debug\PhoneBookApplication.csproj.CoreComp
 D:\PhoneBook\PhoneBookApplication\obj\Debug\PhoneBoo.8DB1ACA8.Up2Date
 D:\PhoneBook\PhoneBookApplication\obj\Debug\PhoneBookApplication.dll
 D:\PhoneBook\PhoneBookApplication\obj\Debug\PhoneBookApplication.pdb
+D:\PhoneBook\PhoneBookApplication\bin\EntityFramework.dll
+D:\PhoneBook\PhoneBookApplication\bin\DataLayer.dll
+D:\PhoneBook\PhoneBookApplication\bin\EntityFramework.xml
+D:\PhoneBook\PhoneBookApplication\bin\DataLayer.pdb
+D:\PhoneBook\PhoneBookApplication\bin\DataLayer.dll.config
