@@ -12,15 +12,45 @@ namespace BusinessLogic.Service
 {
     public class PhoneService
     {
-        public bool Create(phoneDTO Data)
-        {
+        public static bool Create(phoneDTO Data)
+        {   
             PhoneRepo phoneRepo = new PhoneRepo();
-            var phone = Convert(Data);
+            if (Data != null)
+            {    
+                if(Data.Category == null)
+                {
+                    Data.Category = "Unknown";
+                }
+                if (Data.SimCompany == null)
+                {
+                    if (Data.Number[2] == '7' || Data.Number[2] == '3')
+                    {
+                        Data.SimCompany = "GrameenPhone";
+                    }
+                    else if (Data.Number[2] == '4' || Data.Number[2] == '9')
+                    {
+                        Data.SimCompany = "Banglalink";
+                    }
+                    else if (Data.Number[2] == '8' || Data.Number[2] == '6')
+                    {
+                        Data.SimCompany = "Robi";
+                    }
+                    else if (Data.Number[2] == '5' )
+                    {
+                        Data.SimCompany = "TeleTalk";
+                    }
+                    else
+                    {
+                        Data.SimCompany = "Unknown";
+                    }
+                    var phone = Convert(Data);
+                    return phoneRepo.Create(phone);
+                }
+            }
 
-            return phoneRepo.Create(phone);
-
+            return false;
         }
-        public bool Update(phoneDTO Data)
+        public static bool Update(phoneDTO Data)
         {
             PhoneRepo phoneRepo = new PhoneRepo();
             var phone = Convert(Data);
@@ -28,13 +58,13 @@ namespace BusinessLogic.Service
             return phoneRepo.Update(phone);
 
         }
-        public bool Delete(int id)
+        public static bool Delete(int id)
         {
             PhoneRepo phoneRepo = new PhoneRepo();
             return phoneRepo.Delete(id);
 
         }
-        public List<phoneDTO> Get()
+        public static List<phoneDTO> Get()
         {
             PhoneRepo phoneRepo = new PhoneRepo();
 
@@ -47,23 +77,23 @@ namespace BusinessLogic.Service
           
 
         }
-        public phoneDTO Get(int id)
+        public static List<phoneDTO> Get(int id)
         {
             PhoneRepo phoneRepo = new PhoneRepo();
 
-            var phone = phoneRepo.Get(id);
-            if (phone == null) { return null; }
+            var phones = phoneRepo.Get(id);
+            if (phones == null) { return null; }
             else
             {
-                return Convert(phone);
+                return Convert(phones);
             }
         }
 
         //Convertion between data and DTO
 
-        public static List<phoneTable> Convert(List<phoneDTO> Data)
+        public static List<phoneNumber> Convert(List<phoneDTO> Data)
         {
-            List<phoneTable> phones = new List<phoneTable>();
+            List<phoneNumber> phones = new List<phoneNumber>();
 
             foreach (var item in Data)
             {
@@ -73,7 +103,7 @@ namespace BusinessLogic.Service
             return phones;
         }
 
-        public static List<phoneDTO> Convert(List<phoneTable> Data)
+        public static List<phoneDTO> Convert(List<phoneNumber> Data)
         {
             List<phoneDTO> phones = new List<phoneDTO>();
 
@@ -84,7 +114,7 @@ namespace BusinessLogic.Service
             }
             return phones;
         }
-        public static phoneDTO Convert(phoneTable Data)
+        public static phoneDTO Convert(phoneNumber Data)
         {
             phoneDTO phoneDTO = new phoneDTO();
 
@@ -92,18 +122,20 @@ namespace BusinessLogic.Service
             phoneDTO.id = Data.id;
             phoneDTO.Number = Data.Number;
             phoneDTO.SimCompany = Data.SimCompany;
+            phoneDTO.Category = Data.Category;
 
             return phoneDTO;
         }
 
-        public static phoneTable Convert(phoneDTO Data)
+        public static phoneNumber Convert(phoneDTO Data)
         {
-            phoneTable phone = new phoneTable();
+            phoneNumber phone = new phoneNumber();
 
             phone.ContactID = Data.ContactID;
             phone.id = Data.id;
             phone.Number = Data.Number;
             phone.SimCompany = Data.SimCompany;
+            phone.Category = Data.Category;
             
             return phone;
         }

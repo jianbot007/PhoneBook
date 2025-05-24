@@ -70,5 +70,12 @@ namespace DataLayer.Repos
             var user = (from u in users where id == u.id select u).FirstOrDefault();
             return user;
         }
+
+        public user Get(String Username)
+        {
+            var users = db.users.ToList();
+            var user = (from u in users where Username == u.Username select u).FirstOrDefault();
+            return user;
+        }
     }
 }

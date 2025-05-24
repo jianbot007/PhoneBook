@@ -26,7 +26,7 @@ namespace DataLayer.EFs
         }
     
         public DbSet<Contact> Contacts { get; set; }
-        public DbSet<phoneTable> phoneTables { get; set; }
         public DbSet<user> users { get; set; }
+        public DbSet<phoneNumber> phoneNumbers { get; set; }
     }
 }

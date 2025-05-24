@@ -12,12 +12,12 @@ namespace BusinessLogic.Service
     public class ContactService
     {
         
-        public static ContactDTO Get(int id)
+        public static List<ContactDTO> Get(int id)
         {
             ContactRepo contactRepo = new ContactRepo();
-            var contact = contactRepo.Get(id);
+            var contacts = contactRepo.Get(id);
 
-            return Convert(contact);
+            return Convert(contacts);
         }
         public static List<ContactDTO> Get()
         {
@@ -27,7 +27,7 @@ namespace BusinessLogic.Service
             return Convert(contacts);
         }
 
-        public static bool Create(ContactDTO Data)
+        public static int Create(ContactDTO Data)
         {
                 var contact = Convert(Data);
                 ContactRepo contactRepo = new ContactRepo();

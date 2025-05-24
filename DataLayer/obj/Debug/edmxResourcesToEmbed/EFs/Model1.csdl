@@ -12,17 +12,6 @@
     <Property Name="PhotoPath" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
     <Property Name="Address" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
   </EntityType>
-  <EntityType Name="phoneTable">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="SimCompany" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="ContactID" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="phoneTable1" Relationship="Self.FK_phoneTable_phoneTable" FromRole="phoneTable" ToRole="phoneTable1" />
-    <NavigationProperty Name="phoneTable2" Relationship="Self.FK_phoneTable_phoneTable" FromRole="phoneTable1" ToRole="phoneTable" />
-  </EntityType>
   <EntityType Name="user">
     <Key>
       <PropertyRef Name="id" />
@@ -32,25 +21,19 @@
     <Property Name="HashPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="PhoneNumber" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
   </EntityType>
-  <Association Name="FK_phoneTable_phoneTable">
-    <End Role="phoneTable" Type="Self.phoneTable" Multiplicity="1" />
-    <End Role="phoneTable1" Type="Self.phoneTable" Multiplicity="0..1" />
-    <ReferentialConstraint>
-      <Principal Role="phoneTable">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="phoneTable1">
-        <PropertyRef Name="id" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityContainer Name="PhoneBookEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Contacts" EntityType="Self.Contact" />
-    <EntitySet Name="phoneTables" EntityType="Self.phoneTable" />
     <EntitySet Name="users" EntityType="Self.user" />
-    <AssociationSet Name="FK_phoneTable_phoneTable" Association="Self.FK_phoneTable_phoneTable">
-      <End Role="phoneTable" EntitySet="phoneTables" />
-      <End Role="phoneTable1" EntitySet="phoneTables" />
-    </AssociationSet>
+    <EntitySet Name="phoneNumbers" EntityType="PhoneBookModel.phoneNumber" />
   </EntityContainer>
+  <EntityType Name="phoneNumber">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Number" Type="String" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="SimCompany" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ContactID" Type="Int32" Nullable="false" />
+    <Property Name="Category" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
 </Schema>

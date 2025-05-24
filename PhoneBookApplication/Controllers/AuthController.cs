@@ -24,6 +24,8 @@ namespace PhoneBookApplication.Controllers
            bool auth = UserService.Authentication(Username, Password);
             if (auth)
             {
+                var User = UserService.Get(Username);
+                Session["User"] = User;
                 return RedirectToAction("DashBoard", "Home");
             }
             else
@@ -49,6 +51,11 @@ namespace PhoneBookApplication.Controllers
                 ViewBag.Error = "Password length must 8 or more, Please Try Again";
                 return View();
             }
+            if(PhoneNumber.Length != 11 && PhoneNumber[0] != 0 && PhoneNumber[1] != 1)
+            {
+                ViewBag.Error = "Number is Invalid, Please Try Again";
+                return View();
+            }
             
             userDTO.PhoneNumber = PhoneNumber;
             userDTO.Username = Username;
@@ -57,7 +64,8 @@ namespace PhoneBookApplication.Controllers
             var create = UserService.Create(userDTO);
             if (create)
             {
-                Session["Username"] = Username;
+                var User = UserService.Get(Username);
+                Session["User"] = User;
                 return RedirectToAction("DashBoard","Home");
             }
             else

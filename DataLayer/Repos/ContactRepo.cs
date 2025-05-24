@@ -1,28 +1,26 @@
 ﻿using DataLayer.EFs;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Validation;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace DataLayer.Repos
 {
     public class ContactRepo : Repo
-    {  
-       
-        public bool Create(Contact obj)
+    {
+
+        public int Create(Contact obj)
         {
+
+           
             if (obj != null)
             {
-                db.Contacts.Add(obj);
-                db.SaveChanges();
-                return true;
-            }
-            else
-            {
-                return false;
-            }
- 
+              db.Contacts.Add(obj);
+              db.SaveChanges();
+               return obj.id;
+                    }
+            return 0;
         }
         public bool Update(Contact obj)
         {
@@ -48,7 +46,7 @@ namespace DataLayer.Repos
             }
         }
         public bool Delete(int id)
-        { 
+        {
             var contacts = db.Contacts.ToList();
             var contact = (from c in contacts where id == c.id select c).FirstOrDefault();
             if (contact != null)
@@ -67,12 +65,12 @@ namespace DataLayer.Repos
             var contacts = db.Contacts.ToList();
             return contacts;
         }
-        public Contact Get(int id)
+        public List<Contact> Get(int id)
         {
-            var contacts = db.Contacts.ToList();
-            var contact = (from c in contacts where id == c.id select c).FirstOrDefault();
+            var Allcontacts = db.Contacts.ToList();
+            var contacts = (from c in Allcontacts where id == c.user_id select c).ToList();
 
-            return contact;
+            return contacts;
         }
     }
 }

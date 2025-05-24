@@ -98,6 +98,20 @@ namespace BusinessLogic.Service
             }
         }
 
+        public static userDTO Get(String Username)
+        {
+            userRepo userRepo = new userRepo();
+            var user = userRepo.Get(Username);
+            if (user == null)
+            {
+                return null;
+            }
+            else
+            {
+                return Convert(user);
+            }
+        }
+
         public static string HashPassword(string password)
         {
             using (SHA256 sha256 = SHA256.Create())

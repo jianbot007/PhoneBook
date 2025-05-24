@@ -12,14 +12,12 @@ namespace DataLayer.EFs
     using System;
     using System.Collections.Generic;
     
-    public partial class phoneTable
+    public partial class phoneNumber
     {
         public int id { get; set; }
         public string Number { get; set; }
         public string SimCompany { get; set; }
         public int ContactID { get; set; }
-    
-        public virtual phoneTable phoneTable1 { get; set; }
-        public virtual phoneTable phoneTable2 { get; set; }
+        public string Category { get; set; }
     }
 }

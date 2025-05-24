@@ -12,7 +12,8 @@ namespace BusinessLogic.DTOs
         public int id { get; set; }
         public string Number { get; set; }
         public string SimCompany { get; set; }
-        public int ContactID { get; set; }
 
+        public string Category { get; set; }
+        public int ContactID { get; set; }
     }
 }

@@ -6,9 +6,8 @@
     <edmx:Diagrams>
       <Diagram DiagramId="9b38824567e449099499e17501efaf35" Name="Diagram1">
         <EntityTypeShape EntityType="PhoneBookModel.Contact" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="PhoneBookModel.phoneTable" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="PhoneBookModel.user" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
-        <AssociationConnector Association="PhoneBookModel.FK_phoneTable_phoneTable" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="PhoneBookModel.phoneNumber" Width="1.5" PointX="0.75" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        .contact-form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+
+            button:hover {
+                background-color: #45a049;
+            }
+    </style>
+</head>
+<body>
+    @if (TempData["msg"] != null)
+    {
+        <div class=@TempData["class"] role="alert">@TempData["msg"]</div>
+    }
+    <div class="contact-form">
+        <h1>Contact Form</h1>
+        <form action="/Contact/AddContact" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="group">Group</label>
+            <select id="group" name="group" required>
+                <option value="Friend">Friend</option>
+                <option value="Office">Office</option>
+                <option value="Family">Family</option>
+                <option value="Random">Random</option>
+            </select>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="2" required></textarea>
+
+            <label for="Number1">Number 1</label>
+            <input type="text" id="Number1" name="Number1" required>
+            <label for="Category1">Category 1</label>
+            <select id="Category1" name="Category1">
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="Temporary">Temporary</option>
+            </select>
+
+            <label for="Number2">Number 2</label>
+            <input type="text" id="Number2" name="Number2">
+            <label for="Category2">Category 2</label>
+            <select id="Category2" name="Category2">
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="Temporary">Temporary</option>
+            </select>
+
+            <label for="Number3">Number 3</label>
+            <input type="text" id="Number3" name="Number3">
+            <label for="Category3">Category 3</label>
+            <select id="Category3" name="Category3">
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="Temporary">Temporary</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

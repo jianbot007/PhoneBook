@@ -9,11 +9,11 @@ namespace DataLayer.Repos
 {
     public class PhoneRepo : Repo
     {
-        public bool Create(phoneTable obj)
+        public bool Create(phoneNumber obj)
         {
             if (obj != null)
             {
-                db.phoneTables.Add(obj);
+                db.phoneNumbers.Add(obj);
                 db.SaveChanges();
                 return true;
             }
@@ -22,16 +22,17 @@ namespace DataLayer.Repos
                 return false;
             }
         }
-        public bool Update(phoneTable obj)
+        public bool Update(phoneNumber obj)
         {
             if (obj != null)
             {
-                var phones = db.phoneTables.ToList();
+                var phones = db.phoneNumbers.ToList();
                 var phone = (from p in phones where obj.id == p.id select p).FirstOrDefault();
 
                 phone.ContactID = obj.ContactID;
                 phone.SimCompany = obj.SimCompany;
                 phone.Number = obj.Number;
+                phone.Category = obj.Category;
 
                 db.SaveChanges();
                 return true;
@@ -43,10 +44,10 @@ namespace DataLayer.Repos
         }
         public bool Delete(int id)
         {
-            var phones = db.phoneTables.ToList();
+            var phones = db.phoneNumbers.ToList();
             var phone = (from p in phones where id == p.id select p).FirstOrDefault();
             if(phone != null) { 
-            db.phoneTables.Remove(phone);
+            db.phoneNumbers.Remove(phone);
             db.SaveChanges();
             return true;
         }
@@ -55,18 +56,18 @@ namespace DataLayer.Repos
              return false;
             }
         }
-        public List<phoneTable> Get()
+        public List<phoneNumber> Get()
         {
-            var phones = db.phoneTables.ToList();
+            var phones = db.phoneNumbers.ToList();
 
             return phones;
         }
-        public phoneTable Get(int id)
+        public List<phoneNumber> Get(int id)
         {
-            var phones = db.phoneTables.ToList();
-            var phone = (from p in phones where id == p.id select p).FirstOrDefault();
+            var Allphones = db.phoneNumbers.ToList();
+            var Targetphones = (from p in Allphones where id == p.ContactID select p).ToList();
 
-            return phone;
+            return Targetphones;
         }
     }
 }

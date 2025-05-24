@@ -1,7 +1,91 @@
 ﻿
-@{
-    ViewBag.Title = "DashBoard";
-}
+<html>
+<head>
+    <title>Phonebook Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-<h2>DashBoard</h2>
+        .dashboard {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .user-info h2 {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0 0 10px;
+        }
+
+        .settings h3 {
+            font-size: 1.2em;
+            margin: 0 0 10px;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: #337ab7;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #23527c;
+            }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="user-info">
+            <h2>Hey, Welcome @Model.Username</h2>
+            <p>@Model.PhoneNumber</p>
+        </div>
+
+        <div class="contact-list">
+            <button type="button" class="btn btn-success" onclick="window.location.href='/Home/ContactList'">ConctactList</button><br /><br />
+        </div>
+
+        <div class="settings">
+            <h3>Settings</h3>
+            <ul>
+
+                <button type="button" class="btn btn-danger" onclick="window.location.href='/Home/PasswordChange'">Password Change</button>
+                <br />
+                <br />
+                <button type="button" class="btn btn-danger" onclick="window.location.href='/Home/EditProfile'">Edit Profile</button>
+                <br />
+                <br />
+                <button type="button" class="btn btn-danger" onclick="window.location.href='/Home/PasswordChange'">Deactive Account</button>
+                <br />
+                <br />
+                <button type="button" class="btn btn-danger" onclick="window.location.href='/Home/Logout'">Logout</button>
+                <br />
+                <br />
+            </ul>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
 
