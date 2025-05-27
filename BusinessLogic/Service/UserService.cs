@@ -53,15 +53,38 @@ namespace BusinessLogic.Service
             var users = Get();
             var userCheck = (from u in users where Data.Username == u.Username select u).FirstOrDefault();
             var phonecheck = (from u in users where Data.PhoneNumber == u.PhoneNumber select u).FirstOrDefault();
-            if (userCheck != null || phonecheck != null)
-            {
-                return false;
-            }
+                if (Data.PhoneNumber.Length != 11 || Data.PhoneNumber[0] != '0' ||
+                    Data.PhoneNumber[1] != '1' )
+                {
+                    return false;
+                }
+                if(userCheck != null)
+                {
+                    if (userCheck.id != Data.id)
+                    {
+                        return false;
+                    }
+                }
+                if (phonecheck != null)
+                {
+                    if (phonecheck.id != Data.id)
+                     {
+                       return false;
+                      }
+                }
+
+
             var user = Convert(Data);
-            user.HashPassword = HashPassword(Data.HashPassword);
             userRepo userRepo = new userRepo();
             return userRepo.Update(user);
 
+        }
+        public static bool UpdatePassword(userDTO Data)
+        {
+            var user = Convert(Data);
+            user.HashPassword = HashPassword(Data.HashPassword);
+            userRepo userRepo = new userRepo();
+            return userRepo.UpdatePassword(user);
         }
         public static bool Delete(int id)
         {

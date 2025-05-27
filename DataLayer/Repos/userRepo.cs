@@ -27,17 +27,31 @@ namespace DataLayer.Repos
         }
         public bool Update(user obj)
         {
-
-   
             if (obj != null)
             {
                 var users = db.users.ToList();
                 var user = (from u in users where obj.id == u.id select u).FirstOrDefault();
+                user.Username = obj.Username;
                 user.PhoneNumber = obj.PhoneNumber;
-                    user.HashPassword = obj.HashPassword;
-                    db.SaveChanges();
+                db.SaveChanges();
                 return true;
                             
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool UpdatePassword(user obj)
+        {
+            if (obj != null)
+            {
+                var users = db.users.ToList();
+                var user = (from u in users where obj.id == u.id select u).FirstOrDefault();             
+                user.HashPassword = obj.HashPassword;
+                db.SaveChanges();
+                return true;
+
             }
             else
             {

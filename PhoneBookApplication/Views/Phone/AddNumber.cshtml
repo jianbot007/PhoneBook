@@ -1,0 +1,28 @@
+﻿<h2>Add Phone Number</h2>
+@if (TempData["msg"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["msg"]
+    </div>
+}
+<form method="post" action="/Phone/AddNumber">
+    <div class="mb-3">
+        <label for="Number" class="form-label">Phone Number</label>
+        <input type="text" class="form-control" id="Number" name="Number" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="Category" class="form-label">Category</label>
+        <select class="form-select" id="Category" name="Category" required>
+            <option value="Personal">Personal</option>
+            <option value="Work">Work</option>
+            <option value="Temporary">Temporary</option>
+        </select>
+    </div>
+
+    <input type="hidden" name="ContactID" value="@Model" />
+
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
+
+

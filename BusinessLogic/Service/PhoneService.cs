@@ -16,7 +16,10 @@ namespace BusinessLogic.Service
         {   
             PhoneRepo phoneRepo = new PhoneRepo();
             if (Data != null)
-            {    
+            {    if(Data.Number.Length != 11 || Data.Number[0] != '0' || Data.Number[1] != '1')
+                {
+                    return false;
+                }
                 if(Data.Category == null)
                 {
                     Data.Category = "Unknown";
@@ -52,11 +55,37 @@ namespace BusinessLogic.Service
         }
         public static bool Update(phoneDTO Data)
         {
-            PhoneRepo phoneRepo = new PhoneRepo();
+            if (Data.Category == null)
+            {
+                Data.Category = "Unknown";
+            }
+            if (Data.SimCompany == null)
+            {
+                if (Data.Number[2] == '7' || Data.Number[2] == '3')
+                {
+                    Data.SimCompany = "GrameenPhone";
+                }
+                else if (Data.Number[2] == '4' || Data.Number[2] == '9')
+                {
+                    Data.SimCompany = "Banglalink";
+                }
+                else if (Data.Number[2] == '8' || Data.Number[2] == '6')
+                {
+                    Data.SimCompany = "Robi";
+                }
+                else if (Data.Number[2] == '5')
+                {
+                    Data.SimCompany = "TeleTalk";
+                }
+                else
+                {
+                    Data.SimCompany = "Unknown";
+                }
+            }
+              PhoneRepo phoneRepo = new PhoneRepo();
             var phone = Convert(Data);
 
             return phoneRepo.Update(phone);
-
         }
         public static bool Delete(int id)
         {
@@ -77,15 +106,24 @@ namespace BusinessLogic.Service
           
 
         }
-        public static List<phoneDTO> Get(int id)
+        public static List<phoneDTO> GetbyContactid(int id)
         {
             PhoneRepo phoneRepo = new PhoneRepo();
-
-            var phones = phoneRepo.Get(id);
+            var phones = phoneRepo.GetbyContactId(id);
             if (phones == null) { return null; }
             else
             {
                 return Convert(phones);
+            }
+        }
+        public static phoneDTO Get(int id)
+        {
+            PhoneRepo phoneRepo = new PhoneRepo();
+            var phone = phoneRepo.Get(id);
+            if (phone == null) { return null; }
+            else
+            {
+                return Convert(phone);
             }
         }
 

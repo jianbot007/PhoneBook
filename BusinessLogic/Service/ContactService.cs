@@ -3,6 +3,7 @@ using DataLayer.EFs;
 using DataLayer.Repos;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,12 +13,20 @@ namespace BusinessLogic.Service
     public class ContactService
     {
         
-        public static List<ContactDTO> Get(int id)
+        public static List<ContactDTO> GetbyUserID(int id)
         {
             ContactRepo contactRepo = new ContactRepo();
-            var contacts = contactRepo.Get(id);
+            var contacts = contactRepo.GetbyUserID(id);
 
             return Convert(contacts);
+        }
+
+        public static ContactDTO Get(int id)
+        {
+            ContactRepo contactRepo = new ContactRepo();
+            var contact = contactRepo.Get(id);
+
+            return Convert(contact);
         }
         public static List<ContactDTO> Get()
         {
@@ -29,27 +38,36 @@ namespace BusinessLogic.Service
 
         public static int Create(ContactDTO Data)
         {
+            if (Data != null && Data.Email.Length <= 20)
+            {
                 var contact = Convert(Data);
                 ContactRepo contactRepo = new ContactRepo();
                 return contactRepo.Create(contact);
+            }
+            else
+            {
+                return 0;
+            }
         }
 
         public static bool Update(ContactDTO Data)
         {
+            if (Data != null && Data.Email.Length <= 20)
+            {
                 var contact = Convert(Data);
                 ContactRepo contactRepo = new ContactRepo();
                 return contactRepo.Update(contact);
+            }
+            else
+            {
+                return false;
+            }
         }
         public static bool Delete(int id)
         {
             ContactRepo contactRepo = new ContactRepo();
             return contactRepo.Delete(id); 
         }
-
-
-
-
-
 
 
 

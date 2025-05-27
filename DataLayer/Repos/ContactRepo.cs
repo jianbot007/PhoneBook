@@ -12,8 +12,6 @@ namespace DataLayer.Repos
 
         public int Create(Contact obj)
         {
-
-           
             if (obj != null)
             {
               db.Contacts.Add(obj);
@@ -65,12 +63,19 @@ namespace DataLayer.Repos
             var contacts = db.Contacts.ToList();
             return contacts;
         }
-        public List<Contact> Get(int id)
+        public List<Contact> GetbyUserID(int id)
         {
             var Allcontacts = db.Contacts.ToList();
             var contacts = (from c in Allcontacts where id == c.user_id select c).ToList();
 
             return contacts;
+        }
+        public Contact Get(int id)
+        {
+            var Allcontacts = db.Contacts.ToList();
+            var contact = (from c in Allcontacts where id == c.id select c).FirstOrDefault();
+
+            return contact;
         }
     }
 }

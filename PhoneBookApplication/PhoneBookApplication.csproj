@@ -127,6 +127,7 @@
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\AuthController.cs" />
+    <Compile Include="Controllers\PhoneController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -186,6 +187,11 @@
     <Content Include="Views\Home\DashBoard.cshtml" />
     <Content Include="Views\Home\ContactList.cshtml" />
     <Content Include="Views\Contact\AddContact.cshtml" />
+    <Content Include="Views\Phone\EditPhone.cshtml" />
+    <Content Include="Views\Phone\AddNumber.cshtml" />
+    <Content Include="Views\Contact\EditContact.cshtml" />
+    <Content Include="Views\Home\EditProfile.cshtml" />
+    <Content Include="Views\Home\PasswordChange.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

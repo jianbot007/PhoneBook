@@ -1,0 +1,75 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Phone Number</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        form {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+
+    <h2>Edit Phone Number</h2>
+    @if (TempData["msg"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["msg"]
+        </div>
+    }
+    <form method="post" action="/Phone/EditPhone">
+
+        <input type="hidden" name="id" value=@Model.id />
+        <input type="hidden" name="ContactID" value=@Model.ContactID /> 
+        <label for="Number">Phone Number:</label>
+        <input type="text" id="Number" name="Number" value="@Model.Number" required />
+
+        <label for="Category">Category:</label>
+        <select id="Category" name="Category" required>
+            <option value="Personal">Personal</option>
+            <option value="Work">Work</option>
+            <option value="Temporary">Temporary</option>
+        </select>
+
+        <button type="submit">Update</button>
+    </form>
+
+</body>
+</html>
+
+
+

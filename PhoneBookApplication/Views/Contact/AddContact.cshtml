@@ -44,7 +44,9 @@
 <body>
     @if (TempData["msg"] != null)
     {
-        <div class=@TempData["class"] role="alert">@TempData["msg"]</div>
+        <div class="alert alert-danger">
+            @TempData["msg"]
+        </div>
     }
     <div class="contact-form">
         <h1>Contact Form</h1>

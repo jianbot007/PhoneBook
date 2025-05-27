@@ -25,8 +25,7 @@ namespace PhoneBookApplication.Controllers
         [HttpPost]
         public ActionResult AddContact(String name, String email, String address, String group, String Number1, String Number2, String Number3, String Category1, String Category2, String Category3)
         {
-            if (ModelState.IsValid)
-            {
+         
                 var user = Session["User"] as userDTO;
                 int userID = user.id;
                 if (user == null)
@@ -85,14 +84,10 @@ namespace PhoneBookApplication.Controllers
                     }
                     else
                     {
-                        return RedirectToAction("AddContact", "Home");
+                        TempData["msg"] = "Contact add failed.try again";
+                        return RedirectToAction("AddContact", "Contact");
                     }
                 }
-
-                TempData["msg"] = "Contact Added to List";
-                TempData["class"] = "alert alert-success";
-                return RedirectToAction("ContactList", "Home");
-            }
             else
             {
                 TempData["msg"] = "Invalid length ,Please try again";
@@ -103,7 +98,12 @@ namespace PhoneBookApplication.Controllers
         }
 
         public ActionResult DeleteContact(int id)
-        {   
+        {
+            userDTO user = Session["User"] as userDTO;
+            if (user == null || id == null)
+            {
+                return RedirectToAction("Login", "Auth");
+            }
             //Delete Phone Number to includes in this id
             var AllPhone = PhoneService.Get();
             var TargetPhonelist = (from Ap in AllPhone where Ap.ContactID == id select Ap).ToList();
@@ -117,14 +117,50 @@ namespace PhoneBookApplication.Controllers
             
             return RedirectToAction("ContactList", "Home");
         }
-
-
-        //Phone Related Function 
-        public ActionResult DeletePhone(int id)
+        [HttpGet]
+        public ActionResult EditContact(int id)
         {
-            bool AllPhones = PhoneService.Delete(id);
-            return RedirectToAction("ContactList", "Home");
+            userDTO user = Session["User"] as userDTO;
+              if (user == null || id == null)
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+
+            ContactDTO Data = ContactService.Get(id);
+
+            return View(Data);
         }
+        [HttpPost]
+        public ActionResult EditContact(int id,int user_id,String Name,String Address,String Email,String Groups )
+        {
+            userDTO user = Session["User"] as userDTO;
+            if (user == null)
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+            ContactDTO contact = new ContactDTO();
+
+            contact.id = id;
+            contact.Name = Name;
+            contact.Address = Address;
+            contact.Email = Email;
+            contact.PhotoPath = null;
+            contact.Groups = Groups;
+            contact.user_id = user_id;
+            if (ContactService.Update(contact))
+            {
+                return RedirectToAction("ContactList", "Home");
+            }
+            else
+            {
+                TempData["msg"] = "Contact add failed.try again";
+                ContactDTO Data = ContactService.Get(id);
+                return View(Data);
+            }
+    
+        }
+
+
 
     }
 }

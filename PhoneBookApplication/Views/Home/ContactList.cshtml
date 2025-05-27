@@ -1,81 +1,53 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿
+<html>
 <head>
-    <meta charset="UTF-8">
+
     <title>Contact List</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f0f0f0;
-            margin: 20px;
-        }
-
-        .contact-card {
-            background: white;
-            border: 1px solid #ccc;
-            margin-bottom: 15px;
-            padding: 10px;
-        }
-
-        .phone-entry {
-            margin-left: 20px;
-            margin-top: 5px;
-        }
-
-        h2 {
-            margin: 0;
-        }
-
-        .btn {
-            padding: 5px 10px;
-            background-color: #d9534f;
-            color: white;
-            border: none;
-            margin-right: 5px;
-            cursor: pointer;
-        }
-
-            .btn:hover {
-                background-color: #c9302c;
-            }
-
-        .top-buttons {
-            margin-bottom: 20px;
-        }
-    </style>
 </head>
-<body>
-    <div class="top-buttons">
-        <button class="btn" onclick="window.location.href='/Contact/AddContact'">Add Contact</button>
-        <button class="btn" onclick="window.location.href='/Home/Dashboard'">Back</button>
+<body class="bg-light p-4">
+
+    <div class="mb-4">
+        <a href="/Contact/AddContact" class="btn btn-danger">Add Contact</a>
+        <a href="/Home/Dashboard" class="btn btn-danger">Back</a>
     </div>
-    
+
     @foreach (var item in Model)
     {
-        <div class="contact-card">
-            <h2>@item.contact.Name</h2>
-            <p><strong>Email:</strong> @item.contact.Email</p>
-            <p><strong>Group:</strong> @item.contact.Groups</p>
-            <p><strong>Address:</strong> @item.contact.Address</p>
+        <div class="card mb-3">
+            <div class="card-body">
 
-            <div>
-                <strong>Phone Numbers:</strong>
-                @foreach (var phone in item.phones)
+               
+                @if (!string.IsNullOrEmpty(item.contact.PhotoPath))
                 {
-                    <div class="phone-entry">
-                        <p>@phone.Number - @phone.SimCompany - @phone.Category</p>
-                        <button class="btn btn-sm btn-success" onclick="window.location.href='/Home/Edit'">Edit Number</button>
-                        <button class="btn btn-sm btn-success me-2" onclick="window.location.href='/Contact/DeletePhone/@phone.id'">Delete Number</button>
-
-                    </div>
+                    <img src="https://www.shutterstock.com/image-photo/passport-photo-portrait-woman-on-white-2438031869" alt="Contact Image" class="img-thumbnail mb-3" style="max-width: 150px;" />
                 }
-            </div>
-            <div style="margin-top:10px;">
-                <button class="btn btn-sm btn-success me-2" onclick="window.location.href='/Contact/AddContact'">Add Number</button>
-                <button class="btn btn-sm btn-success me-2" onclick="window.location.href='/Contact/EditContact'">Edit Contact</button>
-                <button class="btn btn-sm btn-success me-2" onclick="window.location.href='/Contact/DeleteContact/@item.contact.id'">Delete Contact</button>
+
+                <h5 class="card-title">@item.contact.Name</h5>
+                <p class="card-text"><strong>Email:</strong> @item.contact.Email</p>
+                <p class="card-text"><strong>Group:</strong> @item.contact.Groups</p>
+                <p class="card-text"><strong>Address:</strong> @item.contact.Address</p>
+
+                <div class="mb-2">
+                    <strong>Phone Numbers:</strong>
+                    @foreach (var phone in item.phones)
+                    {
+                        <div class="ms-3 mb-1">
+                            <p class="mb-1">@phone.Number - @phone.SimCompany - @phone.Category</p>
+                            <a href="/Phone/EditPhone/@phone.id" class="btn btn-success btn-sm">Edit Number</a>
+                            <a href="/Phone/DeletePhone/@phone.id" class="btn btn-danger btn-sm">Delete Number</a>
+                        </div>
+                    }
+                </div>
+
+                <div>
+                    <a href="/Phone/AddNumber/@item.contact.id" class="btn btn-primary btn-sm">Add Number</a>
+                    <a href="/Contact/EditContact/@item.contact.id" class="btn btn-primary btn-sm" >Edit Contact</a>
+                    <a href="/Contact/DeleteContact/@item.contact.id" class="btn btn-danger btn-sm">Delete Contact</a>
+                </div>
             </div>
         </div>
     }
+
 </body>
 </html>
+
