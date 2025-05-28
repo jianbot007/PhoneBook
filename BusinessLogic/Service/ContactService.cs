@@ -54,6 +54,8 @@ namespace BusinessLogic.Service
         {
             if (Data != null && Data.Email.Length <= 20)
             {
+                var Contact = Get(Data.id);
+                Data.PhotoPath = Contact.PhotoPath;
                 var contact = Convert(Data);
                 ContactRepo contactRepo = new ContactRepo();
                 return contactRepo.Update(contact);

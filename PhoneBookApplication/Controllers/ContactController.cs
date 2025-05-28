@@ -2,6 +2,7 @@
 using BusinessLogic.Service;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -23,7 +24,7 @@ namespace PhoneBookApplication.Controllers
         }
 
         [HttpPost]
-        public ActionResult AddContact(String name, String email, String address, String group, String Number1, String Number2, String Number3, String Category1, String Category2, String Category3)
+        public ActionResult AddContact(String name, String email, HttpPostedFileBase photo, String address, String group, String Number1, String Number2, String Number3, String Category1, String Category2, String Category3)
         {
          
                 var user = Session["User"] as userDTO;
@@ -32,13 +33,31 @@ namespace PhoneBookApplication.Controllers
                 {
                     return RedirectToAction("Login", "Auth");
                 }
-                ContactDTO contact = new ContactDTO();
+
+            ContactDTO contact = new ContactDTO();
+
+            if (photo != null && photo.ContentLength > 0)
+            {
+                string fileName = Path.GetFileName(photo.FileName);
+                string directory = Server.MapPath("~/Images");
+                string filePath = Path.Combine(directory, fileName);
+                
+                
+                photo.SaveAs(filePath);
+
+                contact.PhotoPath = "~/Images/" + fileName;
+            }
+
+            else
+            {
+                contact.PhotoPath = "~/Images/images.png";
+            }
+
                 contact.user_id = userID;
                 contact.Address = address;
                 contact.Name = name;
                 contact.Email = email;
                 contact.Groups = group;
-                contact.PhotoPath = null;
                 int contactId = ContactService.Create(contact);
                 if (contact != null)
                 {
@@ -144,7 +163,6 @@ namespace PhoneBookApplication.Controllers
             contact.Name = Name;
             contact.Address = Address;
             contact.Email = Email;
-            contact.PhotoPath = null;
             contact.Groups = Groups;
             contact.user_id = user_id;
             if (ContactService.Update(contact))

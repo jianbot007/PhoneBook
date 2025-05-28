@@ -9,6 +9,25 @@
     <div class="mb-4">
         <a href="/Contact/AddContact" class="btn btn-danger">Add Contact</a>
         <a href="/Home/Dashboard" class="btn btn-danger">Back</a>
+        <a href="/Home/ContactList" class="btn btn-success">Refresh</a>
+        <a href="/Home/Download" class="btn btn-success">Dwonload</a>
+    </div>
+    <div>
+        <form method="get" action="/Home/ContactList" class="d-flex align-items-center">
+            <select name="filterbyGroup" class="form-select me-2">
+                <option value=>-- Select Group --</option>
+                <option value="Family">Family</option>
+                <option value="Friend">Friend</option>
+                <option value="Office">Office</option>
+                <option value="Random">Random</option>
+            </select>
+            <button type="submit" class="btn btn-danger btn-sm">Filter</button>
+        </form>
+    </div>
+    <div>
+        <form method="get" action="/Home/ContactList" class="d-flex mb-3" />
+        <input type="text" name="searchItem" class="form-control me-2" placeholder="Search by Name or Groups..." />
+        <button type="submit" class="btn btn-primary">Search</button>
     </div>
 
     @foreach (var item in Model)
@@ -16,11 +35,12 @@
         <div class="card mb-3">
             <div class="card-body">
 
-               
+
                 @if (!string.IsNullOrEmpty(item.contact.PhotoPath))
                 {
-                    <img src="https://www.shutterstock.com/image-photo/passport-photo-portrait-woman-on-white-2438031869" alt="Contact Image" class="img-thumbnail mb-3" style="max-width: 150px;" />
+                    <img src="@Url.Content(item.contact.PhotoPath)" alt="Contact Image" class="img-thumbnail mb-3" style="max-width: 150px;" />
                 }
+
 
                 <h5 class="card-title">@item.contact.Name</h5>
                 <p class="card-text"><strong>Email:</strong> @item.contact.Email</p>
@@ -41,7 +61,7 @@
 
                 <div>
                     <a href="/Phone/AddNumber/@item.contact.id" class="btn btn-primary btn-sm">Add Number</a>
-                    <a href="/Contact/EditContact/@item.contact.id" class="btn btn-primary btn-sm" >Edit Contact</a>
+                    <a href="/Contact/EditContact/@item.contact.id" class="btn btn-primary btn-sm">Edit Contact</a>
                     <a href="/Contact/DeleteContact/@item.contact.id" class="btn btn-danger btn-sm">Delete Contact</a>
                 </div>
             </div>

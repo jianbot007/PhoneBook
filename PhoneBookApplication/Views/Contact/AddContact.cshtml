@@ -50,53 +50,56 @@
     }
     <div class="contact-form">
         <h1>Contact Form</h1>
-        <form action="/Contact/AddContact" method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+        <form action="/Contact/AddContact" method="POST" enctype="multipart/form-data">
+                <label for="Photo">Upload Photo:</label>
+                <input type="file" name="photo" accept="image/*"/>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="group">Group</label>
-            <select id="group" name="group" required>
-                <option value="Friend">Friend</option>
-                <option value="Office">Office</option>
-                <option value="Family">Family</option>
-                <option value="Random">Random</option>
-            </select>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="address">Address</label>
-            <textarea id="address" name="address" rows="2" required></textarea>
+                <label for="group">Group</label>
+                <select id="group" name="group" required>
+                    <option value="Friend">Friend</option>
+                    <option value="Office">Office</option>
+                    <option value="Family">Family</option>
+                    <option value="Random">Random</option>
+                </select>
 
-            <label for="Number1">Number 1</label>
-            <input type="text" id="Number1" name="Number1" required>
-            <label for="Category1">Category 1</label>
-            <select id="Category1" name="Category1">
-                <option value="Personal">Personal</option>
-                <option value="Work">Work</option>
-                <option value="Temporary">Temporary</option>
-            </select>
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="2" required></textarea>
 
-            <label for="Number2">Number 2</label>
-            <input type="text" id="Number2" name="Number2">
-            <label for="Category2">Category 2</label>
-            <select id="Category2" name="Category2">
-                <option value="Personal">Personal</option>
-                <option value="Work">Work</option>
-                <option value="Temporary">Temporary</option>
-            </select>
+                <label for="Number1">Number 1</label>
+                <input type="text" id="Number1" name="Number1" required>
+                <label for="Category1">Category 1</label>
+                <select id="Category1" name="Category1">
+                    <option value="Personal">Personal</option>
+                    <option value="Work">Work</option>
+                    <option value="Temporary">Temporary</option>
+                </select>
 
-            <label for="Number3">Number 3</label>
-            <input type="text" id="Number3" name="Number3">
-            <label for="Category3">Category 3</label>
-            <select id="Category3" name="Category3">
-                <option value="Personal">Personal</option>
-                <option value="Work">Work</option>
-                <option value="Temporary">Temporary</option>
-            </select>
+                <label for="Number2">Number 2</label>
+                <input type="text" id="Number2" name="Number2">
+                <label for="Category2">Category 2</label>
+                <select id="Category2" name="Category2">
+                    <option value="Personal">Personal</option>
+                    <option value="Work">Work</option>
+                    <option value="Temporary">Temporary</option>
+                </select>
 
-            <button type="submit">Submit</button>
-        </form>
+                <label for="Number3">Number 3</label>
+                <input type="text" id="Number3" name="Number3">
+                <label for="Category3">Category 3</label>
+                <select id="Category3" name="Category3">
+                    <option value="Personal">Personal</option>
+                    <option value="Work">Work</option>
+                    <option value="Temporary">Temporary</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
     </div>
 </body>
 </html>
