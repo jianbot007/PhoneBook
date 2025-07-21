@@ -10,3 +10,7 @@ D:\PhoneBook\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cach
 D:\PhoneBook\BusinessLogic\obj\Debug\Business.CF5D6E35.Up2Date
 D:\PhoneBook\BusinessLogic\obj\Debug\BusinessLogic.dll
 D:\PhoneBook\BusinessLogic\obj\Debug\BusinessLogic.pdb
+Z:\Phonebook new\PhoneBook\BusinessLogic\obj\Debug\BusinessLogic.csproj.AssemblyReference.cache
+Z:\Phonebook new\PhoneBook\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
+Z:\Phonebook new\PhoneBook\BusinessLogic\obj\Debug\BusinessLogic.dll
+Z:\Phonebook new\PhoneBook\BusinessLogic\obj\Debug\BusinessLogic.pdb

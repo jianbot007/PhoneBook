@@ -1,4 +1,5 @@
 ﻿using DataLayer.EFs;
+using DataLayer.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Repos
 {
-    public class PhoneRepo : Repo
+    internal class PhoneRepo : Repo,IRepo<phoneNumber,int,bool>,IPhoneRepo
     {
         public bool Create(phoneNumber obj)
         {

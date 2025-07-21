@@ -1,6 +1,8 @@
 ﻿using BusinessLogic.DTOs;
+using DataLayer;
 using DataLayer.EFs;
 using DataLayer.Repos;
+using Microsoft.SqlServer.Server;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
@@ -15,23 +17,23 @@ namespace BusinessLogic.Service
         
         public static List<ContactDTO> GetbyUserID(int id)
         {
-            ContactRepo contactRepo = new ContactRepo();
-            var contacts = contactRepo.GetbyUserID(id);
+        
+            var contacts = DataAccess.AdvanceContactData().GetbyUserID(id);
 
             return Convert(contacts);
         }
 
         public static ContactDTO Get(int id)
         {
-            ContactRepo contactRepo = new ContactRepo();
-            var contact = contactRepo.Get(id);
+          
+            var contact = DataAccess.ContactData().Get(id);
 
             return Convert(contact);
         }
         public static List<ContactDTO> Get()
         {
-            ContactRepo contactRepo = new ContactRepo();
-            var contacts = contactRepo.Get();
+            
+            var contacts = DataAccess.ContactData().Get();
             
             return Convert(contacts);
         }
@@ -41,12 +43,12 @@ namespace BusinessLogic.Service
             if (Data != null && Data.Email.Length <= 20)
             {
                 var contact = Convert(Data);
-                ContactRepo contactRepo = new ContactRepo();
-                return contactRepo.Create(contact);
+              
+                return DataAccess.AdvanceContactData().Creates(contact);
             }
             else
             {
-                return 0;
+                return -1;
             }
         }
 
@@ -57,8 +59,8 @@ namespace BusinessLogic.Service
                 var Contact = Get(Data.id);
                 Data.PhotoPath = Contact.PhotoPath;
                 var contact = Convert(Data);
-                ContactRepo contactRepo = new ContactRepo();
-                return contactRepo.Update(contact);
+              
+                return DataAccess.ContactData().Update(contact);
             }
             else
             {
@@ -67,8 +69,8 @@ namespace BusinessLogic.Service
         }
         public static bool Delete(int id)
         {
-            ContactRepo contactRepo = new ContactRepo();
-            return contactRepo.Delete(id); 
+           
+            return DataAccess.ContactData().Delete(id); 
         }
 
 

@@ -1,4 +1,5 @@
 ﻿using BusinessLogic.DTOs;
+using DataLayer;
 using DataLayer.EFs;
 using DataLayer.Repos;
 using System;
@@ -44,8 +45,8 @@ namespace BusinessLogic.Service
             }
             var user = Convert(Data);
             user.HashPassword = HashPassword(Data.HashPassword);
-            userRepo userRepo = new userRepo();
-            return userRepo.Create(user);
+            
+            return DataAccess.UserData().Create(user);
          
         }
         public static bool Update(userDTO Data)
@@ -75,29 +76,29 @@ namespace BusinessLogic.Service
 
 
             var user = Convert(Data);
-            userRepo userRepo = new userRepo();
-            return userRepo.Update(user);
+         
+            return DataAccess.UserData().Update(user);
 
         }
         public static bool UpdatePassword(userDTO Data)
         {
             var user = Convert(Data);
             user.HashPassword = HashPassword(Data.HashPassword);
-            userRepo userRepo = new userRepo();
-            return userRepo.UpdatePassword(user);
+     
+            return DataAccess.AdvanceUserData().UpdatePassword(user);
         }
         public static bool Delete(int id)
         {
-            userRepo userRepo = new userRepo();
+           
 
-            return userRepo.Delete(id);
+            return DataAccess.UserData().Delete(id);
 
         }
         public static List<userDTO> Get()
         {
 
-            userRepo userRepo = new userRepo();
-            var users = userRepo.Get();
+          
+            var users = DataAccess.UserData().Get();
             if (users == null)
             {
                 return null;
@@ -109,8 +110,8 @@ namespace BusinessLogic.Service
         }
         public static userDTO Get(int id)
         {
-            userRepo userRepo = new userRepo();
-            var user = userRepo.Get(id);
+        
+            var user = DataAccess.UserData().Get(id);
             if (user == null)
             {
                 return null;
@@ -123,8 +124,8 @@ namespace BusinessLogic.Service
 
         public static userDTO Get(String Username)
         {
-            userRepo userRepo = new userRepo();
-            var user = userRepo.Get(Username);
+            
+            var user = DataAccess.AdvanceUserData().Get(Username);
             if (user == null)
             {
                 return null;

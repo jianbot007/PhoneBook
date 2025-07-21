@@ -30,6 +30,13 @@
         <button type="submit" class="btn btn-primary">Search</button>
     </div>
 
+    @if (TempData["searchMSG"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["searchMSG"]
+        </div>
+    }
+
     @foreach (var item in Model)
     {
         <div class="card mb-3">

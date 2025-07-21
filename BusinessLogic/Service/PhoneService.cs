@@ -1,4 +1,5 @@
 ﻿using BusinessLogic.DTOs;
+using DataLayer;
 using DataLayer.EFs;
 using DataLayer.Repos;
 using System;
@@ -14,7 +15,7 @@ namespace BusinessLogic.Service
     {
         public static bool Create(phoneDTO Data)
         {   
-            PhoneRepo phoneRepo = new PhoneRepo();
+          
             if (Data != null)
             {    if(Data.Number.Length != 11 || Data.Number[0] != '0' || Data.Number[1] != '1')
                 {
@@ -47,7 +48,7 @@ namespace BusinessLogic.Service
                         Data.SimCompany = "Unknown";
                     }
                     var phone = Convert(Data);
-                    return phoneRepo.Create(phone);
+                    return DataAccess.PhoneData().Create(phone);
                 }
             }
 
@@ -82,22 +83,22 @@ namespace BusinessLogic.Service
                     Data.SimCompany = "Unknown";
                 }
             }
-              PhoneRepo phoneRepo = new PhoneRepo();
+              
             var phone = Convert(Data);
 
-            return phoneRepo.Update(phone);
+            return DataAccess.PhoneData().Update(phone);
         }
         public static bool Delete(int id)
         {
-            PhoneRepo phoneRepo = new PhoneRepo();
-            return phoneRepo.Delete(id);
+          
+            return DataAccess.PhoneData().Delete(id);
 
         }
         public static List<phoneDTO> Get()
         {
-            PhoneRepo phoneRepo = new PhoneRepo();
+          
 
-            var phones = phoneRepo.Get();
+            var phones = DataAccess.PhoneData().Get();
             if (phones == null) { return null; }
             else
             {
@@ -108,8 +109,8 @@ namespace BusinessLogic.Service
         }
         public static List<phoneDTO> GetbyContactid(int id)
         {
-            PhoneRepo phoneRepo = new PhoneRepo();
-            var phones = phoneRepo.GetbyContactId(id);
+          
+            var phones = DataAccess.AdvancePhoneData().GetbyContactId(id);
             if (phones == null) { return null; }
             else
             {
@@ -118,8 +119,8 @@ namespace BusinessLogic.Service
         }
         public static phoneDTO Get(int id)
         {
-            PhoneRepo phoneRepo = new PhoneRepo();
-            var phone = phoneRepo.Get(id);
+            
+            var phone = DataAccess.PhoneData().Get(id);
             if (phone == null) { return null; }
             else
             {

@@ -1,4 +1,5 @@
 ﻿using DataLayer.EFs;
+using DataLayer.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Repos
 {
-    public class userRepo : Repo
+    internal class userRepo : Repo,IRepo<user,int,bool>,IuserRepo
     {
         public bool Create(user obj)
         {

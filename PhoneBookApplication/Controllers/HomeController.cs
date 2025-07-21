@@ -44,11 +44,17 @@ namespace PhoneBookApplication.Controllers
                 searchItem = searchItem.ToLower();
 
                 ContactList = (from c in ContactList where c.Name.ToLower().Contains(searchItem) || c.Groups.ToLower().Contains(searchItem) select c).ToList();
+
             }
             
             if (filterbyGroup != null)
             {
                 ContactList = (from c in ContactList where c.Groups == filterbyGroup select c).ToList();
+            }
+
+            if(ContactList.Count == 0)
+            {
+                TempData["searchMSG"] = "Sorry user not found";
             }
             var Allphones = PhoneService.Get();
             List<ContactPhone> contactPhoneList = new List<ContactPhone>();
@@ -65,7 +71,7 @@ namespace PhoneBookApplication.Controllers
                 contactPhoneList.Add(contactPhone);
             }
 
-
+            
             return View(contactPhoneList);
         }
 

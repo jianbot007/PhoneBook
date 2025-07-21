@@ -1,89 +1,117 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\PhoneBook\\",
+  "WorkspaceRootPath": "Z:\\Phonebook new\\PhoneBook\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|D:\\PhoneBook\\phonebookapplication\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|z:\\phonebook new\\phonebook\\phonebookapplication\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|D:\\PhoneBook\\phonebookapplication\\views\\home\\contactlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|Z:\\Phonebook new\\PhoneBook\\phonebookapplication\\views\\home\\contactlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\views\\home\\contactlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|D:\\PhoneBook\\phonebookapplication\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|D:\\PhoneBook\\phonebookapplication\\controllers\\phonecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\controllers\\phonecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|D:\\PhoneBook\\phonebookapplication\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|D:\\PhoneBook\\phonebookapplication\\views\\contact\\addcontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\views\\contact\\addcontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F509E2DA-C8EB-404E-A071-A8C9CFC00AAA}|BusinessLogic\\BusinessLogic.csproj|D:\\PhoneBook\\businesslogic\\service\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F509E2DA-C8EB-404E-A071-A8C9CFC00AAA}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\service\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F509E2DA-C8EB-404E-A071-A8C9CFC00AAA}|BusinessLogic\\BusinessLogic.csproj|D:\\PhoneBook\\businesslogic\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F509E2DA-C8EB-404E-A071-A8C9CFC00AAA}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|d:\\phonebook\\phonebookapplication\\views\\contact\\editcontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\views\\contact\\editcontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|D:\\PhoneBook\\phonebookapplication\\views\\phone\\editphone.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\views\\phone\\editphone.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|D:\\PhoneBook\\phonebookapplication\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|d:\\phonebook\\phonebookapplication\\models\\contactphone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\models\\contactphone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|D:\\PhoneBook\\phonebookapplication\\views\\home\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|Z:\\Phonebook new\\PhoneBook\\phonebookapplication\\views\\home\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\views\\home\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F509E2DA-C8EB-404E-A071-A8C9CFC00AAA}|BusinessLogic\\BusinessLogic.csproj|D:\\PhoneBook\\businesslogic\\service\\phoneservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F509E2DA-C8EB-404E-A071-A8C9CFC00AAA}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\service\\phoneservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|D:\\PhoneBook\\phonebookapplication\\views\\home\\passwordchange.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\views\\home\\passwordchange.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|D:\\PhoneBook\\phonebookapplication\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|Z:\\Phonebook new\\PhoneBook\\phonebookapplication\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F509E2DA-C8EB-404E-A071-A8C9CFC00AAA}|BusinessLogic\\BusinessLogic.csproj|D:\\PhoneBook\\businesslogic\\dtos\\contactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|Z:\\Phonebook new\\PhoneBook\\phonebookapplication\\controllers\\phonecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\controllers\\phonecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|Z:\\Phonebook new\\PhoneBook\\phonebookapplication\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|Z:\\Phonebook new\\PhoneBook\\phonebookapplication\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|Z:\\Phonebook new\\PhoneBook\\phonebookapplication\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F509E2DA-C8EB-404E-A071-A8C9CFC00AAA}|BusinessLogic\\BusinessLogic.csproj|Z:\\Phonebook new\\PhoneBook\\businesslogic\\service\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F509E2DA-C8EB-404E-A071-A8C9CFC00AAA}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\service\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F509E2DA-C8EB-404E-A071-A8C9CFC00AAA}|BusinessLogic\\BusinessLogic.csproj|Z:\\Phonebook new\\PhoneBook\\businesslogic\\dtos\\contactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F509E2DA-C8EB-404E-A071-A8C9CFC00AAA}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\dtos\\contactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|D:\\PhoneBook\\datalayer\\repos\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repos\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|D:\\PhoneBook\\phonebookapplication\\views\\phone\\addnumber.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\views\\phone\\addnumber.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F509E2DA-C8EB-404E-A071-A8C9CFC00AAA}|BusinessLogic\\BusinessLogic.csproj|D:\\PhoneBook\\businesslogic\\dtos\\phonedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F509E2DA-C8EB-404E-A071-A8C9CFC00AAA}|BusinessLogic\\BusinessLogic.csproj|Z:\\Phonebook new\\PhoneBook\\businesslogic\\dtos\\phonedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F509E2DA-C8EB-404E-A071-A8C9CFC00AAA}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\dtos\\phonedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|D:\\PhoneBook\\datalayer\\efs\\model1.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|z:\\phonebook new\\phonebook\\datalayer\\repos\\contactrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repos\\contactrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|z:\\phonebook new\\phonebook\\datalayer\\repos\\phonerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repos\\phonerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|z:\\phonebook new\\phonebook\\datalayer\\interfaces\\icontactrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\interfaces\\icontactrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|z:\\phonebook new\\phonebook\\datalayer\\interfaces\\iphonerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\interfaces\\iphonerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F509E2DA-C8EB-404E-A071-A8C9CFC00AAA}|BusinessLogic\\BusinessLogic.csproj|Z:\\Phonebook new\\PhoneBook\\businesslogic\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F509E2DA-C8EB-404E-A071-A8C9CFC00AAA}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F509E2DA-C8EB-404E-A071-A8C9CFC00AAA}|BusinessLogic\\BusinessLogic.csproj|Z:\\Phonebook new\\PhoneBook\\businesslogic\\service\\phoneservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F509E2DA-C8EB-404E-A071-A8C9CFC00AAA}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\service\\phoneservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|Z:\\Phonebook new\\PhoneBook\\datalayer\\repos\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repos\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|z:\\phonebook new\\phonebook\\datalayer\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|z:\\phonebook new\\phonebook\\datalayer\\interfaces\\iuserrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\interfaces\\iuserrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|z:\\phonebook new\\phonebook\\datalayer\\interfaces\\irepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\interfaces\\irepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|Z:\\Phonebook new\\PhoneBook\\phonebookapplication\\models\\contactphone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\models\\contactphone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|Z:\\Phonebook new\\PhoneBook\\phonebookapplication\\views\\contact\\addcontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\views\\contact\\addcontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|Z:\\Phonebook new\\PhoneBook\\phonebookapplication\\views\\contact\\editcontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\views\\contact\\editcontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|Z:\\Phonebook new\\PhoneBook\\phonebookapplication\\views\\phone\\editphone.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\views\\phone\\editphone.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|Z:\\Phonebook new\\PhoneBook\\phonebookapplication\\views\\home\\passwordchange.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\views\\home\\passwordchange.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|Z:\\Phonebook new\\PhoneBook\\phonebookapplication\\views\\phone\\addnumber.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2963F96D-6F0D-487A-80E2-4D27AF13FF42}|PhoneBookApplication\\PhoneBookApplication.csproj|solutionrelative:phonebookapplication\\views\\phone\\addnumber.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|Z:\\Phonebook new\\PhoneBook\\datalayer\\efs\\model1.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{5FA38EEA-5A6D-46FE-98A3-4EB59A96C8AE}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\efs\\model1.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
@@ -94,44 +122,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:1074926236:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "Model1.tt",
-              "DocumentMoniker": "D:\\PhoneBook\\DataLayer\\EFs\\Model1.tt",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\DataLayer\\EFs\\Model1.tt",
               "RelativeDocumentMoniker": "DataLayer\\EFs\\Model1.tt",
-              "ToolTip": "D:\\PhoneBook\\DataLayer\\EFs\\Model1.tt",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\DataLayer\\EFs\\Model1.tt",
               "RelativeToolTip": "DataLayer\\EFs\\Model1.tt",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-05-23T11:06:38.597Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "PhoneBookApplication\\Controllers\\ContactController.cs",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "PhoneBookApplication\\Controllers\\ContactController.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAAKUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T18:24:17.505Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\PhoneBook\\PhoneBookApplication\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "PhoneBookApplication\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\PhoneBook\\PhoneBookApplication\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "PhoneBookApplication\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwCsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T11:23:12.405Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "PhoneController.cs",
-              "DocumentMoniker": "D:\\PhoneBook\\PhoneBookApplication\\Controllers\\PhoneController.cs",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Controllers\\PhoneController.cs",
               "RelativeDocumentMoniker": "PhoneBookApplication\\Controllers\\PhoneController.cs",
-              "ToolTip": "D:\\PhoneBook\\PhoneBookApplication\\Controllers\\PhoneController.cs",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Controllers\\PhoneController.cs",
               "RelativeToolTip": "PhoneBookApplication\\Controllers\\PhoneController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAqwFEAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAFEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T18:30:58.11Z",
               "EditorCaption": ""
@@ -140,191 +171,35 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\PhoneBook\\PhoneBookApplication\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "PhoneBookApplication\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\PhoneBook\\PhoneBookApplication\\Controllers\\HomeController.cs",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Controllers\\HomeController.cs",
               "RelativeToolTip": "PhoneBookApplication\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAMcAAAAAAAAAAAAAAM4AAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T14:55:23.74Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AddContact.cshtml",
-              "DocumentMoniker": "D:\\PhoneBook\\PhoneBookApplication\\Views\\Contact\\AddContact.cshtml",
-              "RelativeDocumentMoniker": "PhoneBookApplication\\Views\\Contact\\AddContact.cshtml",
-              "ToolTip": "D:\\PhoneBook\\PhoneBookApplication\\Views\\Contact\\AddContact.cshtml",
-              "RelativeToolTip": "PhoneBookApplication\\Views\\Contact\\AddContact.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAADYAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-27T16:09:46.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ContactPhone.cs",
-              "DocumentMoniker": "D:\\PhoneBook\\PhoneBookApplication\\Models\\ContactPhone.cs",
-              "RelativeDocumentMoniker": "PhoneBookApplication\\Models\\ContactPhone.cs",
-              "ToolTip": "D:\\PhoneBook\\PhoneBookApplication\\Models\\ContactPhone.cs",
-              "RelativeToolTip": "PhoneBookApplication\\Models\\ContactPhone.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T12:35:40.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ContactList.cshtml",
-              "DocumentMoniker": "D:\\PhoneBook\\PhoneBookApplication\\Views\\Home\\ContactList.cshtml",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Views\\Home\\ContactList.cshtml",
               "RelativeDocumentMoniker": "PhoneBookApplication\\Views\\Home\\ContactList.cshtml",
-              "ToolTip": "D:\\PhoneBook\\PhoneBookApplication\\Views\\Home\\ContactList.cshtml",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Views\\Home\\ContactList.cshtml",
               "RelativeToolTip": "PhoneBookApplication\\Views\\Home\\ContactList.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-23T09:10:06.333Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ContactController.cs",
-              "DocumentMoniker": "D:\\PhoneBook\\PhoneBookApplication\\Controllers\\ContactController.cs",
-              "RelativeDocumentMoniker": "PhoneBookApplication\\Controllers\\ContactController.cs",
-              "ToolTip": "D:\\PhoneBook\\PhoneBookApplication\\Controllers\\ContactController.cs",
-              "RelativeToolTip": "PhoneBookApplication\\Controllers\\ContactController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAwKUAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T18:24:17.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\PhoneBook\\BusinessLogic\\Service\\UserService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Service\\UserService.cs",
-              "ToolTip": "D:\\PhoneBook\\BusinessLogic\\Service\\UserService.cs",
-              "RelativeToolTip": "BusinessLogic\\Service\\UserService.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAUwFEAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T19:55:19.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ContactService.cs",
-              "DocumentMoniker": "D:\\PhoneBook\\BusinessLogic\\Service\\ContactService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Service\\ContactService.cs",
-              "ToolTip": "D:\\PhoneBook\\BusinessLogic\\Service\\ContactService.cs",
-              "RelativeToolTip": "BusinessLogic\\Service\\ContactService.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAADkAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T19:36:36.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\PhoneBook\\PhoneBookApplication\\Views\\Auth\\Login.cshtml",
-              "RelativeDocumentMoniker": "PhoneBookApplication\\Views\\Auth\\Login.cshtml",
-              "ToolTip": "D:\\PhoneBook\\PhoneBookApplication\\Views\\Auth\\Login.cshtml",
-              "RelativeToolTip": "PhoneBookApplication\\Views\\Auth\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T16:49:39.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EditPhone.cshtml",
-              "DocumentMoniker": "D:\\PhoneBook\\PhoneBookApplication\\Views\\Phone\\EditPhone.cshtml",
-              "RelativeDocumentMoniker": "PhoneBookApplication\\Views\\Phone\\EditPhone.cshtml",
-              "ToolTip": "D:\\PhoneBook\\PhoneBookApplication\\Views\\Phone\\EditPhone.cshtml",
-              "RelativeToolTip": "PhoneBookApplication\\Views\\Phone\\EditPhone.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACsAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-26T19:27:14.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EditContact.cshtml",
-              "DocumentMoniker": "D:\\PhoneBook\\PhoneBookApplication\\Views\\Contact\\EditContact.cshtml",
-              "RelativeDocumentMoniker": "PhoneBookApplication\\Views\\Contact\\EditContact.cshtml",
-              "ToolTip": "D:\\PhoneBook\\PhoneBookApplication\\Views\\Contact\\EditContact.cshtml",
-              "RelativeToolTip": "PhoneBookApplication\\Views\\Contact\\EditContact.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-26T19:53:27.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "EditProfile.cshtml",
-              "DocumentMoniker": "D:\\PhoneBook\\PhoneBookApplication\\Views\\Home\\EditProfile.cshtml",
-              "RelativeDocumentMoniker": "PhoneBookApplication\\Views\\Home\\EditProfile.cshtml",
-              "ToolTip": "D:\\PhoneBook\\PhoneBookApplication\\Views\\Home\\EditProfile.cshtml",
-              "RelativeToolTip": "PhoneBookApplication\\Views\\Home\\EditProfile.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-27T19:48:29.254Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "userRepo.cs",
-              "DocumentMoniker": "D:\\PhoneBook\\DataLayer\\Repos\\userRepo.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Repos\\userRepo.cs",
-              "ToolTip": "D:\\PhoneBook\\DataLayer\\Repos\\userRepo.cs",
-              "RelativeToolTip": "DataLayer\\Repos\\userRepo.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAADEAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T19:52:29.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PhoneService.cs",
-              "DocumentMoniker": "D:\\PhoneBook\\BusinessLogic\\Service\\PhoneService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Service\\PhoneService.cs",
-              "ToolTip": "D:\\PhoneBook\\BusinessLogic\\Service\\PhoneService.cs",
-              "RelativeToolTip": "BusinessLogic\\Service\\PhoneService.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAQwBUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T07:02:55.049Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "PasswordChange.cshtml",
-              "DocumentMoniker": "D:\\PhoneBook\\PhoneBookApplication\\Views\\Home\\PasswordChange.cshtml",
-              "RelativeDocumentMoniker": "PhoneBookApplication\\Views\\Home\\PasswordChange.cshtml",
-              "ToolTip": "D:\\PhoneBook\\PhoneBookApplication\\Views\\Home\\PasswordChange.cshtml",
-              "RelativeToolTip": "PhoneBookApplication\\Views\\Home\\PasswordChange.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-27T20:57:23.075Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 3,
               "Title": "DashBoard.cshtml",
-              "DocumentMoniker": "D:\\PhoneBook\\PhoneBookApplication\\Views\\Home\\DashBoard.cshtml",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Views\\Home\\DashBoard.cshtml",
               "RelativeDocumentMoniker": "PhoneBookApplication\\Views\\Home\\DashBoard.cshtml",
-              "ToolTip": "D:\\PhoneBook\\PhoneBookApplication\\Views\\Home\\DashBoard.cshtml",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Views\\Home\\DashBoard.cshtml",
               "RelativeToolTip": "PhoneBookApplication\\Views\\Home\\DashBoard.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -333,11 +208,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 2,
+              "Title": "EditProfile.cshtml",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Views\\Home\\EditProfile.cshtml",
+              "RelativeDocumentMoniker": "PhoneBookApplication\\Views\\Home\\EditProfile.cshtml",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Views\\Home\\EditProfile.cshtml",
+              "RelativeToolTip": "PhoneBookApplication\\Views\\Home\\EditProfile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T19:48:29.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "PhoneBookApplication\\Controllers\\AuthController.cs",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "PhoneBookApplication\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T11:23:12.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "PhoneBookApplication\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "PhoneBookApplication\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-22T16:49:39.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ContactService.cs",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\BusinessLogic\\Service\\ContactService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Service\\ContactService.cs",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\BusinessLogic\\Service\\ContactService.cs",
+              "RelativeToolTip": "BusinessLogic\\Service\\ContactService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAAC0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T19:36:36.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ContactDTO.cs",
-              "DocumentMoniker": "D:\\PhoneBook\\BusinessLogic\\DTOs\\ContactDTO.cs",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\BusinessLogic\\DTOs\\ContactDTO.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\DTOs\\ContactDTO.cs",
-              "ToolTip": "D:\\PhoneBook\\BusinessLogic\\DTOs\\ContactDTO.cs",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\BusinessLogic\\DTOs\\ContactDTO.cs",
               "RelativeToolTip": "BusinessLogic\\DTOs\\ContactDTO.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -346,29 +273,219 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AddNumber.cshtml",
-              "DocumentMoniker": "D:\\PhoneBook\\PhoneBookApplication\\Views\\Phone\\AddNumber.cshtml",
-              "RelativeDocumentMoniker": "PhoneBookApplication\\Views\\Phone\\AddNumber.cshtml",
-              "ToolTip": "D:\\PhoneBook\\PhoneBookApplication\\Views\\Phone\\AddNumber.cshtml",
-              "RelativeToolTip": "PhoneBookApplication\\Views\\Phone\\AddNumber.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-26T19:50:58.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 10,
               "Title": "phoneDTO.cs",
-              "DocumentMoniker": "D:\\PhoneBook\\BusinessLogic\\DTOs\\phoneDTO.cs",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\BusinessLogic\\DTOs\\phoneDTO.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\DTOs\\phoneDTO.cs",
-              "ToolTip": "D:\\PhoneBook\\BusinessLogic\\DTOs\\phoneDTO.cs",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\BusinessLogic\\DTOs\\phoneDTO.cs",
               "RelativeToolTip": "BusinessLogic\\DTOs\\phoneDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T07:02:56.924Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ContactRepo.cs",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\DataLayer\\Repos\\ContactRepo.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Repos\\ContactRepo.cs",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\DataLayer\\Repos\\ContactRepo.cs",
+              "RelativeToolTip": "DataLayer\\Repos\\ContactRepo.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T13:50:46.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PhoneRepo.cs",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\DataLayer\\Repos\\PhoneRepo.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Repos\\PhoneRepo.cs",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\DataLayer\\Repos\\PhoneRepo.cs",
+              "RelativeToolTip": "DataLayer\\Repos\\PhoneRepo.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T13:54:54.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IContactRepo.cs",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\DataLayer\\Interfaces\\IContactRepo.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Interfaces\\IContactRepo.cs",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\DataLayer\\Interfaces\\IContactRepo.cs",
+              "RelativeToolTip": "DataLayer\\Interfaces\\IContactRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T13:52:36.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IPhoneRepo.cs",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\DataLayer\\Interfaces\\IPhoneRepo.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Interfaces\\IPhoneRepo.cs",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\DataLayer\\Interfaces\\IPhoneRepo.cs",
+              "RelativeToolTip": "DataLayer\\Interfaces\\IPhoneRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T13:55:46.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\BusinessLogic\\Service\\UserService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Service\\UserService.cs",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\BusinessLogic\\Service\\UserService.cs",
+              "RelativeToolTip": "BusinessLogic\\Service\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:55:19.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PhoneService.cs",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\BusinessLogic\\Service\\PhoneService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Service\\PhoneService.cs",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\BusinessLogic\\Service\\PhoneService.cs",
+              "RelativeToolTip": "BusinessLogic\\Service\\PhoneService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T07:02:55.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "userRepo.cs",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\DataLayer\\Repos\\userRepo.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Repos\\userRepo.cs",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\DataLayer\\Repos\\userRepo.cs",
+              "RelativeToolTip": "DataLayer\\Repos\\userRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:52:29.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DataAccess.cs",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\DataLayer\\DataAccess.cs",
+              "RelativeDocumentMoniker": "DataLayer\\DataAccess.cs",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\DataLayer\\DataAccess.cs",
+              "RelativeToolTip": "DataLayer\\DataAccess.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T14:14:53.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IuserRepo.cs",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\DataLayer\\Interfaces\\IuserRepo.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Interfaces\\IuserRepo.cs",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\DataLayer\\Interfaces\\IuserRepo.cs",
+              "RelativeToolTip": "DataLayer\\Interfaces\\IuserRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T14:12:52.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Irepo.cs",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\DataLayer\\Interfaces\\Irepo.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Interfaces\\Irepo.cs",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\DataLayer\\Interfaces\\Irepo.cs",
+              "RelativeToolTip": "DataLayer\\Interfaces\\Irepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T13:48:18.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ContactPhone.cs",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Models\\ContactPhone.cs",
+              "RelativeDocumentMoniker": "PhoneBookApplication\\Models\\ContactPhone.cs",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Models\\ContactPhone.cs",
+              "RelativeToolTip": "PhoneBookApplication\\Models\\ContactPhone.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T12:35:40.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AddContact.cshtml",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Views\\Contact\\AddContact.cshtml",
+              "RelativeDocumentMoniker": "PhoneBookApplication\\Views\\Contact\\AddContact.cshtml",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Views\\Contact\\AddContact.cshtml",
+              "RelativeToolTip": "PhoneBookApplication\\Views\\Contact\\AddContact.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADYAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T16:09:46.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EditPhone.cshtml",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Views\\Phone\\EditPhone.cshtml",
+              "RelativeDocumentMoniker": "PhoneBookApplication\\Views\\Phone\\EditPhone.cshtml",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Views\\Phone\\EditPhone.cshtml",
+              "RelativeToolTip": "PhoneBookApplication\\Views\\Phone\\EditPhone.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T19:27:14.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EditContact.cshtml",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Views\\Contact\\EditContact.cshtml",
+              "RelativeDocumentMoniker": "PhoneBookApplication\\Views\\Contact\\EditContact.cshtml",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Views\\Contact\\EditContact.cshtml",
+              "RelativeToolTip": "PhoneBookApplication\\Views\\Contact\\EditContact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T19:53:27.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PasswordChange.cshtml",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Views\\Home\\PasswordChange.cshtml",
+              "RelativeDocumentMoniker": "PhoneBookApplication\\Views\\Home\\PasswordChange.cshtml",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Views\\Home\\PasswordChange.cshtml",
+              "RelativeToolTip": "PhoneBookApplication\\Views\\Home\\PasswordChange.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T20:57:23.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AddNumber.cshtml",
+              "DocumentMoniker": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Views\\Phone\\AddNumber.cshtml",
+              "RelativeDocumentMoniker": "PhoneBookApplication\\Views\\Phone\\AddNumber.cshtml",
+              "ToolTip": "Z:\\Phonebook new\\PhoneBook\\PhoneBookApplication\\Views\\Phone\\AddNumber.cshtml",
+              "RelativeToolTip": "PhoneBookApplication\\Views\\Phone\\AddNumber.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T19:50:58.469Z"
             }
           ]
         }

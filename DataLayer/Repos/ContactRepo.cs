@@ -1,4 +1,5 @@
 ﻿using DataLayer.EFs;
+using DataLayer.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.Validation;
@@ -7,19 +8,25 @@ using System.Text;
 
 namespace DataLayer.Repos
 {
-    public class ContactRepo : Repo
+    internal class ContactRepo : Repo,IRepo<Contact,int,bool>,IContactRepo
     {
 
-        public int Create(Contact obj)
+        public int Creates(Contact obj)
         {
             if (obj != null)
             {
               db.Contacts.Add(obj);
               db.SaveChanges();
-               return obj.id;
+                return obj.id;
                     }
-            return 0;
+            return -1; 
         }
+
+        public bool Create(Contact obj)
+        {
+            return true;
+        }
+
         public bool Update(Contact obj)
         {
 
@@ -36,11 +43,11 @@ namespace DataLayer.Repos
                 contact.user_id = obj.user_id;
 
                 db.SaveChanges();
-                return true;
+                return contact.user_id;
             }
             else
             {
-                return false;
+                return -1;
             }
         }
         public bool Delete(int id)
