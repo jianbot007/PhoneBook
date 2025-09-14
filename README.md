@@ -3,7 +3,6 @@
 A modern ASP.NET MVC PhoneBook web application for efficient contact management.  
 _Built with C# and ASP.NET MVC as part of an interview task._
 
----
 
 ## 🌟 Overview
 
@@ -13,7 +12,9 @@ _Built with C# and ASP.NET MVC as part of an interview task._
 
 ## 🚀 Features
 
-- **Add Contacts**: Create new entries with name and phone number
+
+- **Authentication**: Create a new account with a unique name and mobile number
+- **Add Contacts**: Create new entries with name and phone number, and profile picture
 - **View Contacts**: List all saved contacts in a clear table
 - **Search**: Find contacts by name or phone number
 - **Edit**: Update contact details
@@ -79,3 +80,4 @@ Feel free to fork the repo and open a pull request.
 
 > **Repository:** [jianbot007/PhoneBook](https://github.com/jianbot007/PhoneBook)  
 > _Developed as part of an interview task by [jianbot007](https://github.com/jianbot007)_
+
