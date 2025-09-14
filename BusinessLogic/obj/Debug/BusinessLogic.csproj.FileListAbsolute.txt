@@ -14,3 +14,7 @@ Z:\Phonebook new\PhoneBook\BusinessLogic\obj\Debug\BusinessLogic.csproj.Assembly
 Z:\Phonebook new\PhoneBook\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
 Z:\Phonebook new\PhoneBook\BusinessLogic\obj\Debug\BusinessLogic.dll
 Z:\Phonebook new\PhoneBook\BusinessLogic\obj\Debug\BusinessLogic.pdb
+D:\phoneBook2\PhoneBook\BusinessLogic\obj\Debug\BusinessLogic.csproj.AssemblyReference.cache
+D:\phoneBook2\PhoneBook\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
+D:\phoneBook2\PhoneBook\BusinessLogic\obj\Debug\BusinessLogic.dll
+D:\phoneBook2\PhoneBook\BusinessLogic\obj\Debug\BusinessLogic.pdb
